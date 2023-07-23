@@ -2,7 +2,6 @@ run:
 	@cd $(root_path) && go run ./main.go serve
 
 serve:
-	@echo "fasten your belts..."
 	@cd $(root_path) && ./$(app_name) serve
 
 build:

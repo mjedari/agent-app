@@ -57,6 +57,7 @@ func (ap *AgentPool) Initiate() {
 			break
 		}
 	}
+	fmt.Printf("%v random located agents were created.", NumberOfAgents)
 }
 
 func (a *Agent) numberOfStepsToTarget() int {

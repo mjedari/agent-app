@@ -25,7 +25,7 @@ func (a *Agent) Move() {
 	defer func() {
 		a.makeFree()
 	}()
-
+	fmt.Printf("agent is going to reach target (%v, %v): from: %v \n", a.target.X, a.target.Y, a.location.ToString())
 	steps := 0
 	ticker := time.NewTicker(time.Second)
 	for {
